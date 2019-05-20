@@ -1,0 +1,487 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+
+* {
+  font-family: 'Roboto';
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+
+html {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+
+#succes {
+  position: fixed;
+  top: 1em;
+  right: 1em;
+  color: #ed1e24;
+  font-size: 1.3em;
+  font-weight: bold;
+  animation: message 10s;
+  z-index: 99999;
+}
+
+@keyframes message {
+  from { opacity: 0;}
+  20% {opacity: 1;}
+  to {opacity: 0;}
+}
+
+
+@media screen and (min-width:1200px) {
+
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  background-color: ;
+}
+
+
+#roomOne {
+  width: 50%;
+  height: 100%;
+  background-image: url(https://www.trainingpartner.se/images/default-source/Toppbilder-1000x490/grupprum-1.jpg?sfvrsn=0);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  float: left;
+  transition: all 1.3s;
+  transition-property: all;
+}
+
+
+#roomTwo {
+  width: 50%;
+  height: 100%;
+  background-image: url(https://www.trainingpartner.se/images/default-source/Mellanstora-bilder/grupprum-1.jpg?sfvrsn=0);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  float: right;
+  transition: all 1.3s;
+  transition-property: all;
+}
+
+
+#roomThree {
+  width: 50%;
+  height: 100%;
+  background-image: url(https://www.gullmarsstrand.se/assets/bilder/Konferenslokaler/konferneslokal-grupprum-2017.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  float: left;
+  transition: all 1.3s;
+  transition-property: all;
+}
+
+
+#roomFour {
+  width: 50%;
+  height: 100%;
+  background-image: url(https://konferensrum-i-stockholm.se/wp-content/uploads/2016/05/grupprum.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  float: right;
+  transition: all 1.3s;
+  transition-property: all;
+}
+
+
+/*PASTE FIRST CSS CODE HERE*/
+
+
+.container {
+  width: 50%;
+  height: 50%;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 5px;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+
+.button {
+  width: 130px;
+  height: 40px;
+  border-radius: 3px;
+  outline: none;
+  padding: .7em 1.4em;
+  background-color: #ed1e24;
+  color: white;
+  font-weight: bold;
+  font-size: 100%;
+  cursor: pointer;
+  border: none;
+  position: absolute;
+  left: 50%;
+  bottom: 5%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transition: all .5s;
+  transition-property: background-color;
+}
+
+
+.button:hover {
+  background-color: black;
+}
+
+
+.booked {
+  width: 80%;
+  height: 50%;
+  /*background-color: yellow;*/
+  /*background-color: rgba(237, 30, 36, .99);*/
+  overflow-y: scroll;
+  border-radius: 3px;
+}
+
+
+
+
+
+.slide {
+  width: 25%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, .95);
+  position: fixed;
+  top: 0;
+  right: -25%;
+  z-index: 999999;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.slide i {
+  position: absolute;
+  top: .5em;
+  left: .5em;
+  font-size: 2em;
+  cursor: pointer;
+  transition: transform 500ms ease-in-out;
+}
+
+
+.slide i:hover {
+  transform: rotate(90deg);
+}
+
+
+.card {
+  width: 40%;
+  height: 30%;
+  position: relative;
+  top: 1em;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 3px;
+}
+
+
+.slideContent {
+  width: 80%;
+  height: 30%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .7);
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  display: none;
+}
+
+
+input[type=text] {
+  border: 1px solid #bdbdbd;
+  color: #5b6270;
+  border-radius: 3px;
+  padding: .7em .5em;
+  outline: none;
+}
+
+input[type=submit] {
+  width: 130px;
+  height: 40px;
+  border-radius: 3px;
+  outline: none;
+  padding: .7em 1.4em;
+  background-color: #ed1e24;
+  color: white;
+  font-weight: bold;
+  font-size: 100%;
+  cursor: pointer;
+  border: none;
+}
+
+                        }
+
+
+
+
+
+
+/*PHONE VERSION*/
+@media screen and (max-width:1200px) {
+
+
+.wrapper {
+  height: 200%;
+  width: 100%;
+  background-color: ;
+}
+
+
+#roomOne {
+  width: 100%;
+  height: 50%;
+  background-image: url(https://www.trainingpartner.se/images/default-source/Toppbilder-1000x490/grupprum-1.jpg?sfvrsn=0);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  float: left;
+  transition: all 1.3s;
+  transition-property: all;
+}
+
+
+#roomTwo {
+  width: 100%;
+  height: 50%;
+  background-image: url(https://www.trainingpartner.se/images/default-source/Mellanstora-bilder/grupprum-1.jpg?sfvrsn=0);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  float: right;
+  transition: all 1.3s;
+  transition-property: all;
+}
+
+
+#roomThree {
+  width: 100%;
+  height: 50%;
+  background-image: url(https://www.gullmarsstrand.se/assets/bilder/Konferenslokaler/konferneslokal-grupprum-2017.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  float: left;
+  transition: all 1.3s;
+  transition-property: all;
+}
+
+
+#roomFour {
+  width: 100%;
+  height: 50%;
+  background-image: url(https://konferensrum-i-stockholm.se/wp-content/uploads/2016/05/grupprum.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  float: right;
+  transition: all 1.3s;
+  transition-property: all;
+}
+
+
+/*PASTE SECOND CSS CODE HERE*/
+
+
+
+.container {
+  width: 50%;
+  height: 50%;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 5px;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+
+.button {
+  width: 130px;
+  height: 40px;
+  border-radius: 3px;
+  outline: none;
+  padding: .7em 1.4em;
+  background-color: #ed1e24;
+  color: white;
+  font-weight: bold;
+  font-size: 100%;
+  cursor: pointer;
+  border: none;
+  position: absolute;
+  left: 50%;
+  bottom: 5%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transition: all .5s;
+  transition-property: background-color;
+}
+
+
+.button:hover {
+  background-color: black;
+}
+
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .7);
+  position: fixed;
+  top: 0;
+  z-index: 9;
+  display: none;
+}
+
+
+.slide {
+  width: 60%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  right: -60%;
+  background-color: white;
+}
+
+
+.booked {
+  width: 80%;
+  height: 50%;
+  /*background-color: yellow;*/
+  /*background-color: rgba(237, 30, 36, .99);*/
+  overflow-y: scroll;
+  border-radius: 3px;
+  word-wrap: break-word;
+  overflow-x: hidden;
+}
+
+
+.slide i {
+  position: absolute;
+  top: .5em;
+  left: .5em;
+  font-size: 2em;
+  cursor: pointer;
+  transition: transform 500ms ease-in-out;
+}
+
+
+.slide i:hover {
+  transform: rotate(90deg);
+}
+
+
+.card {
+  width: 40%;
+  height: 30%;
+  position: relative;
+  top: 3em;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 3px;
+}
+
+
+.slideContent {
+  width: 80%;
+  height: 30%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+input[type=text] {
+  border: 1px solid #bdbdbd;
+  color: #5b6270;
+  border-radius: 3px;
+  padding: .7em .5em;
+  outline: none;
+}
+
+input[type=submit] {
+  width: 130px;
+  height: 40px;
+  border-radius: 3px;
+  outline: none;
+  padding: .7em 1.4em;
+  background-color: #ed1e24;
+  color: white;
+  font-weight: bold;
+  font-size: 100%;
+  cursor: pointer;
+  border: none;
+}
+
+
+
+}
